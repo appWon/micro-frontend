@@ -38,6 +38,16 @@ vscode로 코드를 작성시 zip 으로 관리하고 있어 의존성을 읽을
 
 ![_구조 다이어그램 drawio](https://user-images.githubusercontent.com/96896468/178422858-db545dc9-0d59-409d-817f-c9c6fecc4340.png)
 
+### workspace-tool plugin
+
+```
+// yarn workspace-tool 설치
+
+yarn plugin import workspace-tools
+```
+
+workspace-tools 플러그인을 설치하는 이유는 `foreach`라는 기능을 사용하기 위해서 설치를 하였다. 이 기능은 자바스크립트의 `foreach` 같은 개념으로 설정한 workspace에 대해 명령어를 실행을하게 해주고, `--since` 라는 옵션으로 참조 브랜치 기준 `변경된 코드가 있는 workspace만` 명령어를 실행하게 할 수 있다.
+
 # ❗️webpack5 module Federation
 
 웹팩5 부터 내장기능으로 추가된 federation 기술은 지금 구현한 마이크로 프론트 프로젝트에서 `가장 중요한 부분`이다. Federation은 `runtime`시 공유한 서비스로 부터 코드(chunk file)와 종속성(dependency)을 동적으로 사용하거나 다시 공유할 수 있다.
