@@ -137,3 +137,9 @@ function App() {
 
 export default App
 ```
+
+# 🖥 배포전략
+
+지금 배포 방법은 개인적인 생각을 담은 배포 방법이다.
+
+> 👉 yarn pnp 전략을 사용하면 레파지토리에 모든 종속성들을 가지고 있어, docker container에서 build를 진행하는 `docker multi stage build` 방법을 사용하지 않고, 프로젝트에서 build 후 dist 폴더를 `VOLUMES`로 공유 한다면, 코드의 변경이 있더라도 이미지를 다시 만들지 않고 바로 실행할 수 있어 시간 낭비를 최소화 할 수 있다.
