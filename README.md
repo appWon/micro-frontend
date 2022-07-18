@@ -48,6 +48,10 @@ yarn plugin import workspace-tools
 
 workspace-tools 플러그인을 설치하는 이유는 `foreach`라는 기능을 사용하기 위해서 설치를 하였다. 이 기능은 자바스크립트의 `foreach` 같은 개념으로 설정한 workspace에 대해 명령어를 실행을하게 해주고, `--since` 라는 옵션으로 참조 브랜치 기준 `변경된 코드가 있는 workspace만` 명령어를 실행하게 할 수 있다.
 
+#### 주의❗️ - foreach의 --since 옵션을 사용할 경우 git-flow 전략을 무엇보다 잘 이용해야한다.
+
+![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/46001535/179459904-b9ec5c57-3d0e-49ac-99e7-c7b29741944e.png)
+
 # ❗️webpack5 module Federation
 
 웹팩5 부터 내장기능으로 추가된 federation 기술은 지금 구현한 마이크로 프론트 프로젝트에서 `가장 중요한 부분`이다. Federation은 `runtime`시 공유한 서비스로 부터 코드(chunk file)와 종속성(dependency)을 동적으로 사용하거나 다시 공유할 수 있다.
