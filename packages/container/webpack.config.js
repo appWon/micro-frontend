@@ -16,7 +16,7 @@ const devServer = {
 const federation = {
   name: "container",
   remotes: {
-    remote_service1: "service_1@http://localhost:3002/remoteEntry.js",
+    remote_service1: "service_1@http://localhost:3001/remoteEntry.js",
   },
 };
 

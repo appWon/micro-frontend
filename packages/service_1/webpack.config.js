@@ -10,7 +10,7 @@ const devServer = {
   headers: {
     "Access-Control-Allow-Origin": "*",
   },
-  port: 3002,
+  port: 3001,
 };
 
 const federation = {

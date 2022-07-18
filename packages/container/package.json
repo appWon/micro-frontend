@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "webpack-cli serve",
-    "build": "tsc && vite build",
+    "build": "webpack-cli build",
     "preview": "vite preview"
   },
   "dependencies": {

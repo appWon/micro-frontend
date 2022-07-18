@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  container:
+    container_name: container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
+    volumes:
+      - ./packages/container/dist:/var/www/html
+  service_1:
+    container_name: service_1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3001:80'
+    volumes:
+      - ./packages/service_1/dist:/var/www/html
