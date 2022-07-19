@@ -4,5 +4,5 @@
     "module": "esnext",
     "moduleResolution": "node"
   },
-  "include": ["./src/remoteType.d.ts"]
+  "include": ["./src/remoteType.d.ts", "./jest-setup.ts"]
 }
