@@ -1,17 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const deps = require("./package.json").dependencies;
-const path = require("path");
-
-const devServer = {
-  static: {
-    directory: path.join(__dirname, "dist"),
-  },
-  headers: {
-    "Access-Control-Allow-Origin": "*",
-  },
-  port: 3001,
-};
 
 const federation = {
   name: "service_1",
@@ -19,12 +8,23 @@ const federation = {
   exposes: {
     "./App": "./src/App.tsx",
   },
+  shared: {
+    ...deps,
+    react: {
+      eager: true,
+      singleton: true,
+      requiredVersion: deps.react,
+    },
+    "react-dom": {
+      eager: true,
+      singleton: true,
+      requiredVersion: deps["react-dom"],
+    },
+  },
 };
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
-  devServer,
   output: {
     publicPath: "auto",
   },

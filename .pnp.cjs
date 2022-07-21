@@ -3138,7 +3138,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"],\
             ["webpack", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:5.73.0"],\
             ["webpack-cli", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:4.10.0"],\
-            ["webpack-dev-server", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:4.9.3"]\
+            ["webpack-dev-server", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:4.9.3"],\
+            ["webpack-merge", "npm:5.8.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -7065,7 +7066,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"],\
             ["webpack", "virtual:2af9db3f2ca5c6a44595bab0b20883e4a447276cd311c76ad43d210384804adb57d1cebca58efac74fc2608312017d8d4621dc5dbe669327c4dc5545c279a7c8#npm:5.73.0"],\
             ["webpack-cli", "virtual:2af9db3f2ca5c6a44595bab0b20883e4a447276cd311c76ad43d210384804adb57d1cebca58efac74fc2608312017d8d4621dc5dbe669327c4dc5545c279a7c8#npm:4.10.0"],\
-            ["webpack-dev-server", "virtual:2af9db3f2ca5c6a44595bab0b20883e4a447276cd311c76ad43d210384804adb57d1cebca58efac74fc2608312017d8d4621dc5dbe669327c4dc5545c279a7c8#npm:4.9.3"]\
+            ["webpack-dev-server", "virtual:2af9db3f2ca5c6a44595bab0b20883e4a447276cd311c76ad43d210384804adb57d1cebca58efac74fc2608312017d8d4621dc5dbe669327c4dc5545c279a7c8#npm:4.9.3"],\
+            ["webpack-merge", "npm:5.8.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
