@@ -5,7 +5,6 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn workspaces foreach run dev",
     "build": "yarn workspaces foreach run build",
     "build:changed": "yarn workspaces foreach --since=origin/main run build "
   },
