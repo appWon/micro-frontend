@@ -7057,11 +7057,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/service_1/",\
           "packageDependencies": [\
             ["server_1", "workspace:packages/service_1"],\
+            ["@testing-library/jest-dom", "npm:4.2.4"],\
+            ["@testing-library/react", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:13.3.0"],\
+            ["@types/jest", "npm:28.1.6"],\
             ["@types/react", "npm:18.0.15"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["html-webpack-plugin", "virtual:2af9db3f2ca5c6a44595bab0b20883e4a447276cd311c76ad43d210384804adb57d1cebca58efac74fc2608312017d8d4621dc5dbe669327c4dc5545c279a7c8#npm:5.5.0"],\
+            ["jest", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:28.1.3"],\
+            ["jest-environment-jsdom", "npm:28.1.3"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:18.2.0"],\
+            ["ts-jest", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:28.0.7"],\
             ["ts-loader", "virtual:2af9db3f2ca5c6a44595bab0b20883e4a447276cd311c76ad43d210384804adb57d1cebca58efac74fc2608312017d8d4621dc5dbe669327c4dc5545c279a7c8#npm:9.3.1"],\
             ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=7ad353"],\
             ["webpack", "virtual:2af9db3f2ca5c6a44595bab0b20883e4a447276cd311c76ad43d210384804adb57d1cebca58efac74fc2608312017d8d4621dc5dbe669327c4dc5545c279a7c8#npm:5.73.0"],\
